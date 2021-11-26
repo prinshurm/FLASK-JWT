@@ -47,7 +47,11 @@ def token_required(f):
 def get_all_users(current_user):
 
 	if not current_user.admin:
+<<<<<<< HEAD
 		return jsonify({'message': 'Can not perform the function!!'})
+=======
+		return jsonify({'message': ' You Can not perform the function!'})
+>>>>>>> a3375e4ce8dba80c838cee588b1359376b7e5f77
 	users = User.query.all()
 	output = []
 	for user in users:
